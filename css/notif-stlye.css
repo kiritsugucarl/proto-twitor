@@ -1,0 +1,91 @@
+.notifs {
+    margin-left: 4rem;
+    margin-right: 5rem;
+}
+
+.notification {
+    padding: 1rem;
+    display: block;
+    border: 1px solid gray;
+    transition: 0.5s ease-in-out;
+}
+
+.notification div {
+    display: flex;
+}
+
+.fa-bell {
+    color: rgba(201, 63, 63, 0.788);
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.fa-envelope {
+    color: rgba(201, 63, 63, 0.788);
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.fa-user-plus {
+    color: rgba(201, 63, 63, 0.788);
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.moment {
+    color: var(--text-tertiary);
+    transition: 0.5s ease-in-out;
+}
+
+.un {
+    color: rgba(201, 63, 63, 0.788);
+    transition: 0.5s ease-in-out;
+}
+
+.notification img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.notification p {
+    margin-bottom: auto;
+    margin-left: 3rem;
+    color: var(--text-primary);
+    transition: 0.5s ease-in-out;
+}
+
+.notification:hover {
+    background: var(--post-bg-hover);
+}
+
+.notification:hover .fa-bell {
+    color: rgba(231, 45, 45, 0.788);
+}
+
+.notification:hover .fa-envelope {
+    color: rgba(231, 45, 45, 0.788);
+}
+
+.notification:hover .fa-user-plus {
+    color: rgba(231, 45, 45, 0.788);
+}
+
+.notification:hover .moment {
+    color: var(--text-quadratic);
+}
+
+.notification:hover .un {
+    color: rgba(243, 35, 35, 0.788);
+}
+
+.notification:hover p {
+    color: var(--text-secondary);
+}

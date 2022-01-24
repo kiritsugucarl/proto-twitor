@@ -1,0 +1,217 @@
+.main-top-part {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    background: var(--bg-secondary);
+    border-radius: 1rem;
+    width: 80%;
+}
+
+.tweet-area {
+    padding-top: 0.5rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.button a {
+    background: rgb(128, 30, 30);
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    width: 5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding-top: 0.7rem;
+    color: rgb(235, 230, 230);
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.button a:hover {
+    background: rgb(228, 46, 46);
+}
+
+textarea {
+    font-size: 1.25rem;
+    background: var(--bg-secondary);
+    color: white;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    display: flex;
+    width: 100%;
+    transition: 0.2s ease-out;
+    margin-right: 1rem;
+}
+
+textarea:focus {
+    font-size: 1.5rem;
+    border-bottom: 1px solid gray;
+    background-color: var(--bg-primary);
+}
+
+.tweet-buttons {
+    display: flex;
+    width: 2rem;
+    margin-left: 4.5rem;
+    padding: 0.5rem;
+    filter: grayscale(100%) opacity(0.8);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    transition: 0.5s ease-out;
+    transform: rotate(0 deg);
+    transition: transform var(--transition-speed);
+}
+
+.tweet-buttons:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-primary);
+    transform: rotate(-360deg);
+}
+
+.form-input img {
+    width: 100%;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.submit {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.main-users {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.post-area {
+    display: block;
+    margin-left: 8rem;
+    margin-top: 3rem;
+    margin-right: 5rem;
+}
+
+.profile {
+    display: flex;
+}
+
+.twit {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    transition: background 0.5s ease-in-out;
+}
+
+.twit:hover {
+    background: var(--post-bg-hover);
+}
+
+.name {
+    font-size: 20px;
+    color: var(--text-secondary);
+    font-weight: normal;
+    display: inline;
+    margin: 0;
+    padding-left: 1rem;
+    height: auto;
+    margin: 0;
+}
+
+.username {
+    display: inline;
+    font-weight: normal;
+    padding-left: 1rem;
+    color: var(--text-primary);
+    font-size: 20px;
+}
+
+.twit-post {
+    display: inline-block;
+}
+
+.twit-post p {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.post-user {
+    width: 5rem;
+    height: 5rem;
+}
+
+.twit-post {
+    display: block;
+}
+
+.act-buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.act-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.act-btn img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.act-btn .heart-btn {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    bottom: 20%;
+    left: 20%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.act-btn:hover .heart-btn {
+    display: inline;
+    opacity: 100;
+}
+
+.act-btn:hover {
+    background: var(--bg-primary);
+}
+
+.count {
+    color: darkgray;
+    place-self: center;
+}

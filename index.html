@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home-page.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proto Twitor</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="index.html" class="nav-link logo-link">
+                    <span class="link-text">Twitor</span>
+                    <img class="nav-icons" src="images/logo.png" />
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <img class="nav-icons" src="images/home.png" />
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="pages/notifications.html" class="nav-link">
+                    <img class="nav-icons" src="images/notif.png" />
+                    <span class="link-text">Notifications</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="pages/messages.html" class="nav-link">
+                    <img class="nav-icons" src="images/message.png" />
+                    <span class="link-text">Messages</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="pages/profile.html" class="nav-link">
+                    <img class="userpfp" width="64px" height="64px" src="images/user_pfp.jpg" />
+                    <span class="link-text">Profile</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1>Home</h1>
+        <div class="main-top-part">
+            <div class="tweet-area">
+                <img class="userpfp main-users" src="images/user_pfp.jpg" />
+                <textarea id="#autoresize" class="tweet" maxlength="150" rows="3" cols="40" placeholder="Whats poppin?"></textarea>
+            </div>
+
+            <div class="button">
+                <form action="#">
+                    <label for="img"><img class="tweet-buttons" src="images/gallery.png"
+            /></label>
+                    <input class="hide" type="file" id="img" name="img" accept="image/*" id="file-upload" onchange="showPreview(pic);" />
+                </form>
+
+                <form action="#">
+                    <label for="img"><img class="tweet-buttons" src="images/gif.png"
+            /></label>
+                    <input class="hide" type="file" id="gif" name="img" accept="image/.gif" />
+                </form>
+
+                <form class="#" action="#">
+                    <label for="file-upload"><img class="tweet-buttons" src="images/poll.png"
+            /></label>
+                    <input class="hide" type="file" id="img" name="img" accept="image/*" />
+                </form>
+
+                <form action="#">
+                    <label for="img"><img class="tweet-buttons" src="images/smile.png"
+            /></label>
+                    <input class="hide" type="file" id="img" name="img" accept="image/*" />
+                </form>
+
+                <a class="submit" href="#">Twit</a>
+            </div>
+        </div>
+        <hr />
+        <div class="post-area">
+            <div class="twit">
+                <img class="userpfp post-user" src="images/user_pfp1.jpg" />
+                <div class="twit-post">
+                    <span class="name">Demon_Lord <i class="username">@miko_sakura 18h</i>
+            </span>
+                    <p>Pangit si ...</p>
+                    <div class="act-buttons">
+                        <div class="act-btn">
+                            <img src="images/comment.png">
+                            <img class="heart-btn" src="images/comment-act.png">
+                        </div>
+                        <span class="count">999</span>
+                        <div class="act-btn">
+                            <img src="images/heart.png">
+                            <img class="heart-btn" src="images/heart-act.png">
+                        </div>
+                        <span class="count">1,000</span>
+                        <div class="act-btn">
+                            <img src="images/retwit.png">
+                            <img class="heart-btn" src="images/retwit-act.png">
+                        </div>
+                        <span class="count">50</span>
+                        <div class="act-btn">
+                            <img src="images/share.png">
+                            <img class="heart-btn" src="images/share-act.png">
+                        </div>
+                        <span class="count">21</span>
+                        <div class="act-btn">
+                            <img src="images/report.png">
+                            <img class="heart-btn" src="images/report-act.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="twit">
+                <img class="userpfp post-user" src="images/user_pfp2.png" />
+                <div class="twit-post">
+                    <span class="name"> USADA CEO <i class="username">@usada_pekora 15h</i>
+            </span>
+                    <p>This is a sample text</p>
+                    <div class="act-buttons">
+                        <div class="act-btn">
+                            <img src="images/comment.png">
+                            <img class="heart-btn" src="images/comment-act.png">
+                        </div>
+                        <span class="count">13</span>
+                        <div class="act-btn">
+                            <img src="images/heart.png">
+                            <img class="heart-btn" src="images/heart-act.png">
+                        </div>
+                        <span class="count">14</span>
+                        <div class="act-btn">
+                            <img src="images/retwit.png">
+                            <img class="heart-btn" src="images/retwit-act.png">
+                        </div>
+                        <span class="count">31</span>
+                        <div class="act-btn">
+                            <img src="images/share.png">
+                            <img class="heart-btn" src="images/share-act.png">
+                        </div>
+                        <span class="count">21</span>
+                        <div class="act-btn">
+                            <img src="images/report.png">
+                            <img class="heart-btn" src="images/report-act.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="twit">
+                <img class="userpfp post-user" src="images/user_pfp3.png" />
+                <div class="twit-post">
+                    <span class="name">700K HUSBANDS <i class="username">@momosuzu_nene 2h</i>
+            </span>
+                    <p>This is a sample text</p>
+                    <div class="act-buttons">
+                        <div class="act-btn">
+                            <img src="images/comment.png">
+                            <img class="heart-btn" src="images/comment-act.png">
+                        </div>
+                        <span class="count">13</span>
+                        <div class="act-btn">
+                            <img src="images/heart.png">
+                            <img class="heart-btn" src="images/heart-act.png">
+                        </div>
+                        <span class="count">14</span>
+                        <div class="act-btn">
+                            <img src="images/retwit.png">
+                            <img class="heart-btn" src="images/retwit-act.png">
+                        </div>
+                        <span class="count">31</span>
+                        <div class="act-btn">
+                            <img src="images/share.png">
+                            <img class="heart-btn" src="images/share-act.png">
+                        </div>
+                        <span class="count">21</span>
+                        <div class="act-btn">
+                            <img src="images/report.png">
+                            <img class="heart-btn" src="images/report-act.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="twit">
+                <img class="userpfp post-user" src="images/user_pfp4.jpeg" />
+                <div class="twit-post">
+                    <span class="name">FINALLY A BLUE AXOLOTL <i class="username">@kanatan_gorilla 3m ago</i>
+            </span>
+                    <p>This is a sample text</p>
+                    <div class="act-buttons">
+                        <div class="act-btn">
+                            <img src="images/comment.png">
+                            <img class="heart-btn" src="images/comment-act.png">
+                        </div>
+                        <span class="count">13</span>
+                        <div class="act-btn">
+                            <img src="images/heart.png">
+                            <img class="heart-btn" src="images/heart-act.png">
+                        </div>
+                        <span class="count">14</span>
+                        <div class="act-btn">
+                            <img src="images/retwit.png">
+                            <img class="heart-btn" src="images/retwit-act.png">
+                        </div>
+                        <span class="count">31</span>
+                        <div class="act-btn">
+                            <img src="images/share.png">
+                            <img class="heart-btn" src="images/share-act.png">
+                        </div>
+                        <span class="count">21</span>
+                        <div class="act-btn">
+                            <img src="images/report.png">
+                            <img class="heart-btn" src="images/report-act.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="twit">
+                <img class="userpfp post-user" src="images/user_pfp.jpg" />
+                <div class="twit-post">
+                    <span class="name">Suisei <i class="username">@suisei_comet 3h</i>
+            </span>
+                    <p>This is a sample text</p>
+                    <div class="act-buttons">
+                        <div class="act-btn">
+                            <img src="images/comment.png">
+                            <img class="heart-btn" src="images/comment-act.png">
+                        </div>
+                        <span class="count">13</span>
+                        <div class="act-btn">
+                            <img src="images/heart.png">
+                            <img class="heart-btn" src="images/heart-act.png">
+                        </div>
+                        <span class="count">14</span>
+                        <div class="act-btn">
+                            <img src="images/retwit.png">
+                            <img class="heart-btn" src="images/retwit-act.png">
+                        </div>
+                        <span class="count">31</span>
+                        <div class="act-btn">
+                            <img src="images/share.png">
+                            <img class="heart-btn" src="images/share-act.png">
+                        </div>
+                        <span class="count">21</span>
+                        <div class="act-btn">
+                            <img src="images/report.png">
+                            <img class="heart-btn" src="images/report-act.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="sidebar">
+            <form class="search-bar">
+                <input type="text" name="search" placeholder="Find..." autocomplete="off">
+            </form>
+            <ul class=" sidebar-side ">
+                <h2>Trending topics:</h2>
+                <li class="side ">
+                    <a href="# " class="trending ">
+                        <div class="trend ">
+                            <span class="trend-spot ">#1 in Trending Right Now!</span>
+                            <p class="topic ">#OUSTDu30Now</p>
+                            <span class="trend-spot ">15,000 twits</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="side ">
+                    <a href="# " class="trending ">
+                        <div class="trend ">
+                            <span class="trend-spot ">#2 in Trending Right Now!</span>
+                            <p class="topic ">#NasaanAngPagkainKo</p>
+                            <span class="trend-spot ">15,000 twits</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="side ">
+                    <a href="# " class="trending ">
+                        <div class="trend ">
+                            <span class="trend-spot ">#3 in Trending Right Now!</span>
+                            <p class="topic ">#WebDevIsDeadly</p>
+                            <span class="trend-spot ">15,000 twits</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="side ">
+                    <a href="# " class="trending ">
+                        <div class="trend ">
+                            <span class="trend-spot ">#4 in Trending Right Now!</span>
+                            <p class="topic ">#NoStudentsLeftBehind</p>
+                            <span class="trend-spot ">15,000 twits</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="side ">
+                    <a href="# " class="trending ">
+                        <div class="trend ">
+                            <span class="trend-spot ">#5 in Trending Right Now!</span>
+                            <p class="topic ">#Pain</p>
+                            <span class="trend-spot ">15,000 twits</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="side">
+                    <span>Copyright &#169; 2021 Carl Dennis Pineda</span>
+                </li>
+            </ul>
+        </nav>
+</body>
+
+</html>

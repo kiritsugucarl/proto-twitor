@@ -1,0 +1,72 @@
+.bottom-part {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.message-list {
+    width: 25%;
+}
+
+.messages {
+    width: 25%;
+}
+
+.message:first-child {
+    border-top: 1px gray solid;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    border-top: none;
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+    border-bottom: 1px gray solid;
+    transition: 0.8s ease-in-out;
+}
+
+.image {
+    padding: 0.5rem;
+    max-width: 50px;
+    max-height: 3rem;
+    width: 3rem;
+    height: fit-content;
+    border-radius: 50%;
+}
+
+.message-text {
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.username {
+    color: var(--text-quadratic);
+}
+
+.message-text p {
+    width: 250px;
+    color: var(--text-primary);
+    transition: 0.8s ease-in-out;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.message:hover {
+    background-color: var(--bg-primary);
+}
+
+.message:hover .message-text p {
+    color: #fff;
+}
+
+.message-place {
+    width: 70%;
+    border: 1px solid gray;
+    background-color: gray;
+    height: 1245px;
+}
+
+.active {
+    background: var(--post-bg-hover);
+}
